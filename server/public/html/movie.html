@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Movie Search</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- bootstrap css file is added-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- custom css file is added-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- container-->
+    <div class="container">
+        <div class="header clearfix">
+            <!-- nav bar-->
+            <nav>
+                <ul class="nav nav-pills pull-right">
+                    <!--nav bar options-->
+                    <li role="presentation" class="active"><a href="/">Home</a></li>
+                    <li role="presentation"><a href="/signout">logout</a></li>
+                </ul>
+            </nav>
+            <!-- header-->
+            <h3 class="text-muted">Project Cinemas</h3>
+        </div>
+        <center>
+            <!-- search input -->
+            <input id='movie' type='text' name='search' class='input-sm' required>
+            <button id='searchbtn' type='submit' class='btn btn-primary' onclick="getMovie()">Search</button>
+            <button id='favbtn' type='submit' class='btn btn-primary' onclick='favMovie()'>Favourite</button>
+            <!-- table-->
+            <table id='result' class='table'>
+                <tbody></tbody>
+            </table>
+        </center>
+    </div>
+    <script src="../js/moviedetails.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>

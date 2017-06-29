@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Movie Search</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- bootstrap css file is added-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- custom css file is added-->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- custom js file is added-->
+    <script src='js/index.js'></script>
+</head>
+
+<body>
+    <!--container col-md-6 -->
+    <div class='container col-md-6'>
+        <!-- form -->
+        <form method='post' action='/signup'>
+            <!-- form-group for first name-->
+            <div class="form-group">
+                <label for="firstname">First Name:</label>
+                <input type="text" class="form-control" name='firstname' required>
+            </div>
+            <!-- form group for last name-->
+            <div class="form-group">
+                <label for="lastname">Last Name:</label>
+                <input type="text" class="form-control" name='lastname' required>
+            </div>
+            <!-- form group for user name-->
+            <div class="form-group">
+                <label for="username">User Name:</label>
+                <input type="text" class="form-control" name='username' required>
+            </div>
+            <!-- form group for email id-->
+            <div class="form-group">
+                <label for="email">email Id:</label>
+                <input type="email" class="form-control" name='email' required>
+            </div>
+            <!-- form group for password-->
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" class="form-control" name='password' required>
+            </div>
+            <!-- form group for confirm password-->
+            <div class="form-group">
+                <label for="cpassword">Confirm Password:</label>
+                <input type="password" class="form-control" name='cpassword' required>
+            </div>
+            <!-- signup button-->
+            <input type='submit' value='submit' class='btn btn-primary'>
+            <!-- form end-->
+        </form>
+    </div>
+</body>
+
+</html>

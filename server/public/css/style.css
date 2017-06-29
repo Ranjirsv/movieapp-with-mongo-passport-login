@@ -1,0 +1,29 @@
+/* style properties for body section */
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background:url('https://www.colourbox.com/preview/2045819-movie-theater-seats-3d-rendered-image.jpg');
+  background-repeat:no-repeat;
+  background-size:cover;
+  color: white;
+}
+
+/* margin top for nav element */
+
+nav{
+    margin-top:-40px;
+}
+
+/* style for anchor element */
+
+a {
+  color: #00B7FF;
+}
+
+/* style properties for table element */
+
+table{
+    margin-top:30px;
+    color:white;
+    font-size:18px;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Movie Search</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- bootstrap css file is added-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- custom css file is added-->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- custom js file is added-->
+    <script src='js/index.js'></script>
+</head>
+
+<body>
+    <!-- container and col-md-6 -->
+    <div class='container col-md-6'>
+        <!-- form -->
+        <form method='post' action='/login'>
+
+            <!-- form-group for usrename -->
+            <div class="form-group">
+                <label for="userName">User Name:</label>
+                <input type="text" class="form-control" name='username' required>
+            </div>
+            <!-- form- group for password-->
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" class="form-control" name='password' required>
+            </div>
+            <!-- login button-->
+            <input type='submit' value='submit' class='btn btn-primary'>
+        </form>
+    </div>
+</body>
+
+</html>
