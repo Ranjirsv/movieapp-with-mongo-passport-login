@@ -65,7 +65,7 @@ module.exports = {
         var title = req.query.Title;
 
 // remove method for removing doc in db
-console.log(title);
+
         movies.remove({
             Title: title,
             username: req.query.username
