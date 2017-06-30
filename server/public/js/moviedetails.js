@@ -1,6 +1,5 @@
 var movieObj;
-// getMovie method for search movie in api
-// ajax request is made for search
+
 /*calling login funtion when click login button in login form */
 function login() {
        console.log(document.getElementById('username').value);
@@ -20,18 +19,18 @@ function login() {
         },
         /*with respect to the  received data alert will be shown */
         success: function(data) {
-          /*  if (data.length == 0) {
-                alert("UserName or password is invalid");
-            } else {*/
-              /*  window.location = "../html/signup.html";*/
+          
+               
+               window.location='movie.html';
                alert("login sucess");
-           /* }*/
+           
 
         }
     });
 }
 
-
+// getMovie method for search movie in api
+// ajax request is made for search
 function getMovie() {
     console.log('getMovie');
     $.ajax({
