@@ -27,8 +27,14 @@ router.post('/login', passport.authenticate('login', {
 	}));
 
 router.get('/signout', function(req, res) {
-		req.logout();
-		res.redirect('/');
+		 req.session.destroy(function(err) {
+      if (err) {
+        console.log("Error");
+      } else {
+        res.redirect('/');
+      }
+  });
+
 	});
 
 router.get('/search', moviecontroller.search);

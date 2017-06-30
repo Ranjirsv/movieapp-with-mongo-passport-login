@@ -1,6 +1,5 @@
 /*calling login funtion when click login button in login form */
 function login() {
-   localStorage.setItem("username", "");
    localStorage.setItem("username",document.getElementById('username').value) ;
     //console.log("am in login");
     /*ajax call*/
@@ -9,7 +8,7 @@ function login() {
         type: 'POST',
         data: {
             username: document.getElementById('username').value,
-            password: document.getElementById('pw').value
+            password: document.getElementById('password').value
         },
         error: function(err) {
             throw err;
